@@ -1,0 +1,55 @@
+# Dependencies
+markdown:            kramdown
+highlighter:         pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           /:title
+
+# Setup
+title:               BLOGCOSMO
+tagline:             'Blog like a hacker'
+description:         'Just a personal blogging site'
+url:                 http://blogcosmo.github.io
+baseurl:             /
+paginate:            3
+
+# About/contact
+author:
+  name:              Sagaya Abdulhafeez
+  url:               https://twitter.com/___shaggy_
+  email:             harpheezsagaya@Live.com
+
+# Custom vars
+version:             2.0
+
+# Social Media
+github:				http://github.com/blogcosmo
+twitter:			http://twitter.com/___shaggy_
+
+# Theme Author (Please don't edit this line cause of MIT LICENSE rules)
+theme:
+creator:			Sagaya Abdul
+codename:			COSMO
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: Sagaya Abdul
+      layout: "post"
+      comments: true
+      title: Cosmo - {{post.title}}
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "page"
+      
+
+language: ruby
+script: "bundle exec jekyll build"      
